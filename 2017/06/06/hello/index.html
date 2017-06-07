@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>我的博客之始 | Ted博客</title>
+    <title>我的博客之始（附搭建hexo博客教程） | Ted博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="author" content="why">
+    <meta name="author" content="Ted">
     
-    <meta name="description" content="忙乎半天，终于把hexo在github上搭建个人博客搭建成功 其中学会了不少知识点，也要感谢前辈写的博客，没有他们的学习文档，自己搭建必定困难丛丛，学习文章有http://blog.csdn.net/gdutxiaoxu/article/details/53576018http://blog.csd">
+    <meta name="description" content="搭建博客忙乎半天，终于把hexo在github上搭建个人博客搭建成功 
+其中学会了不少知识点，也要感谢前辈写的博客，没有他们的学习文档，自己搭建必定困难丛丛，学习文章有
+
+手把手教你用Hexo+Github 搭建属于自己的博客
+
+零基础免费搭建个人博客-hexo+githubhttp://blog.">
     
     
     
@@ -65,15 +70,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/06/06/hello/" title="我的博客之始" itemprop="url">我的博客之始</a>
+      <a href="/2017/06/06/hello/" title="我的博客之始（附搭建hexo博客教程）" itemprop="url">我的博客之始（附搭建hexo博客教程）</a>
   </h1>
   <p class="article-author">By
     
-      <a href="https://hong1yuan.github.io" title="why">why</a>
+      <a href="https://hong1yuan.github.io" title="Ted">Ted</a>
     </p>
   <p class="article-time">
     <time datetime="2017-06-06T06:01:43.000Z" itemprop="datePublished">2017-06-06</time>
-    更新日期:<time datetime="2017-06-06T06:12:12.508Z" itemprop="dateModified">2017-06-06</time>
+    更新日期:<time datetime="2017-06-07T09:19:56.704Z" itemprop="dateModified">2017-06-07</time>
     
   </p>
 </header>
@@ -82,10 +87,112 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建博客"><span class="toc-number">1.</span> <span class="toc-text">搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#表达感谢"><span class="toc-number">1.0.1.</span> <span class="toc-text">表达感谢</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo搭建踩过的坑"><span class="toc-number">2.</span> <span class="toc-text">Hexo搭建踩过的坑</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#版本"><span class="toc-number">2.1.</span> <span class="toc-text">版本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本地设置"><span class="toc-number">3.</span> <span class="toc-text">本地设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#npm-与-cnpm"><span class="toc-number">3.1.</span> <span class="toc-text">npm 与 cnpm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装hexo"><span class="toc-number">3.2.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Git"><span class="toc-number">3.3.</span> <span class="toc-text">配置Git</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设置皮肤"><span class="toc-number">4.</span> <span class="toc-text">设置皮肤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-找一款皮肤使博客变的好看起来"><span class="toc-number">4.0.1.</span> <span class="toc-text">1.找一款皮肤使博客变的好看起来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-下载皮肤"><span class="toc-number">4.0.2.</span> <span class="toc-text">2.下载皮肤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-修改-config-yml"><span class="toc-number">4.0.3.</span> <span class="toc-text">3.修改_config.yml</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">5.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#联系"><span class="toc-number">6.</span> <span class="toc-text">联系</span></a></li></ol>
 		</div>
 		
-		<p>忙乎半天，终于把hexo在github上搭建个人博客搭建成功 其中学会了不少知识点，也要感谢前辈写的博客，没有他们的学习文档，自己搭建必定困难丛丛，学习文章有<br><a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="external">http://blog.csdn.net/gdutxiaoxu/article/details/53576018</a><br><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">http://blog.csdn.net/jzooo/article/details/46781805</a> 表达感谢</p>
+		<h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><p>忙乎半天，终于把hexo在github上搭建个人博客搭建成功 </p>
+<p>其中学会了不少知识点，也要感谢前辈写的博客，没有他们的学习文档，自己搭建必定困难丛丛，学习文章有</p>
+<ul>
+<li><p><a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="external">手把手教你用Hexo+Github 搭建属于自己的博客</a></p>
+</li>
+<li><p><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">零基础免费搭建个人博客-hexo+github</a><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">http://blog.csdn.net/jzooo/article/details/46781805</a> </p>
+</li>
+<li><p><a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a></p>
+</li>
+</ul>
+<h3 id="表达感谢"><a href="#表达感谢" class="headerlink" title="表达感谢"></a>表达感谢</h3><h1 id="Hexo搭建踩过的坑"><a href="#Hexo搭建踩过的坑" class="headerlink" title="Hexo搭建踩过的坑"></a>Hexo搭建踩过的坑</h1><p>在发现<strong>Hexo</strong>需要搭建的时间只需要<em>20分钟</em>，我兴奋的就开始搭建，现实证明了</p>
+<blockquote>
+<p>《墨菲定律》：所有的事都会比你预计的时间长</p>
+</blockquote>
+<p>现在我来从头讲解一下我踩过的坑</p>
+<h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><p>查到的文章基础上都是2年前的文章，用的工具都是N年前的版本，我现在用的版本</p>
+<ul>
+<li>Win7 64位（网上基础上都是mac 都是有钱人）</li>
+<li>Git-2.13.0-64-bit</li>
+<li>node-v8.0.0-x64</li>
+<li>Hexo</li>
+</ul>
+<p>之后安装与所有人一样就好 下一步、下一步、结束。<br>之后我们打开Win键和R键 输入cmd 运行一下命令是否安装成功<br> <code>git --version</code><br> <code>node -v</code><br> <code>npm -v</code><br><img src="/images/cmdImage.png" alt="cmd"></p>
+<p>行内老规矩 成功查看版本号就算是成功</p>
+<p>下一步就是创建github帐号了，正常创建一个帐号而已，只不过换成了英文。</p>
+<p>创建好帐号创建个项目<strong>New repository</strong>。</p>
+<p>这里需要注意的是你创建帐号用的名字是<em>hong1yuan</em> 那么你建立博客项目时命名也应该是<em>hong1yuan.github.io</em> 否则像我第一次想换个名称<em>qy.github.io</em>成功部署后域名变成了 <em>hong1yuan.github.io/qy.github.io</em> </p>
+<ul>
+<li>这里创建好后就获取了你的git地址 建议选SSH中git@打头的，我选择https后来hexo git报错。</li>
+<li>如果你看过别的文章 会告诉你settings里需要设置一下生成博客，人家<em>github</em>早升级不需要了，我找这个设置就找了20分钟 坑</li>
+</ul>
+<hr>
+<h1 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h1><h2 id="npm-与-cnpm"><a href="#npm-与-cnpm" class="headerlink" title="npm 与 cnpm"></a>npm 与 cnpm</h2><p>现在我们需要用node.js中的<em>npm</em>下载<em>hexo</em> 如果你不会翻墙，下载速度会挺慢的，这时候出现了中国 npm 淘宝<em>cnpm</em>他们做了个服务 每10分钟检测npm共享内容是否更新 </p>
+<p><code>$ npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+<p>这样就可以用<em>淘宝npm</em>了 感谢这些为了服务默默奉献的人</p>
+<p>以下代码都可以用<em>cnpm</em> 代替 <em>npm</em> 不过我用的是npm直接下的</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p><code>npm install -g hexo</code></p>
+<p>查看版本 </p>
+<p><code>hexo -v</code></p>
+<p>查看帮助</p>
+<p><code>hexo help</code></p>
+<p><strong>hexo</strong>这个时候就安装完成了 这个时候你在你相中的磁盘找个位置 执行<code>hexo init</code>就初始化成功了</p>
+<p>之后运行博客</p>
+<p><code>hexo g</code></p>
+<p><code>hexo s</code>或者两合一</p>
+<p><code>hexo s -g</code></p>
+<p>服务启动后告诉你登录 localhost:4000 来进入自己的博客 这里有一个坑4000端口占用事件，本地运行不了 特别坑，主要原因是 <em>福昕阅读器</em> 默认竟然会开启4000端口 使本地访问时一直在加载。</p>
+<p><code>hexo s -p 5000</code> 换个端口 （请大家记住这是2017年6月 如果在此之后的人正巧看到我的文章 有些东西已经不对了 这个锅我不背）</p>
+<p>生成后的文件夹中的功能我讲解下 </p>
+<ul>
+<li>scaffolds 脚手架，也就是一个工具模板</li>
+<li>scripts 写文件的js，扩展hexo的功能</li>
+<li>source 存放博客正文内容</li>
+<li>source/_drafts 草稿箱</li>
+<li>source/_posts 文件箱</li>
+<li>themes 存放皮肤的目录</li>
+<li>themes/landscape 默认的皮肤</li>
+<li>_config.yml 全局的配置文件</li>
+<li>db.json 静态常量<br>这里<strong>_config.yml</strong> 我们会编辑一下<br><strong>themes</strong> 我们我下一些皮肤<br><strong>source/_posts</strong> 会创建我们的文章 <em>.md</em>文件 可以用sublime等工具编辑</li>
+</ul>
+<p><code>hexo new 新的开始</code><br>会创建一篇新文章在<strong>source/_posts</strong>里 <strong>新的开始.md</strong> 进行编辑<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="string">新的开始</span></div><div class="line"><span class="attr">date:</span> <span class="number">2014</span><span class="bullet">-05</span><span class="bullet">-07</span> <span class="number">18</span><span class="string">:44:12</span></div><div class="line"><span class="attr">tags:</span></div><div class="line"><span class="bullet">-</span> <span class="string">开始</span></div><div class="line"><span class="bullet">-</span> <span class="string">我</span></div><div class="line"><span class="bullet">-</span> <span class="string">日记</span></div><div class="line"><span class="attr">categories:</span> <span class="string">日志</span></div><div class="line"><span class="meta">---</span></div><div class="line"><span class="string">正文</span></div></pre></td></tr></table></figure></p>
+<p>这个时候你需要学习<strong>Markdown</strong>语法 这时候你会发现 原来自己的博客还得需要学习一种文章语法，还好不难</p>
+<ul>
+<li><a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Markdown——入门指南</a> 简书的 推荐</li>
+<li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a> 写的有点多</li>
+</ul>
+<p>_config.yml详解<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#博客名称</span></div><div class="line"><span class="attr">title:</span> <span class="string">我的博客</span></div><div class="line"><span class="comment">#副标题</span></div><div class="line"><span class="attr">subtitle:</span> <span class="string">一天进步一点</span></div><div class="line"><span class="comment">#简介</span></div><div class="line"><span class="attr">description:</span> <span class="string">记录生活点滴</span></div><div class="line"><span class="comment">#博客作者</span></div><div class="line"><span class="attr">author:</span> <span class="string">John</span> <span class="string">Doe</span></div><div class="line"><span class="comment">#博客语言</span></div><div class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></div><div class="line"><span class="comment">#时区</span></div><div class="line"><span class="attr">timezone:</span></div><div class="line"></div><div class="line"><span class="comment">#博客地址,与申请的GitHub一致</span></div><div class="line"><span class="attr">url:</span> <span class="attr">http://elfwalk.github.io</span></div><div class="line"><span class="attr">root:</span> <span class="string">/</span></div><div class="line"><span class="comment">#博客链接格式</span></div><div class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></div><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"></div><div class="line"><span class="attr">source_dir:</span> <span class="string">source</span></div><div class="line"><span class="attr">public_dir:</span> <span class="string">public</span></div><div class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span></div><div class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span></div><div class="line"><span class="attr">category_dir:</span> <span class="string">categories</span></div><div class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></div><div class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></div><div class="line"><span class="attr">skip_render:</span></div><div class="line"></div><div class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span> <span class="comment"># File name of new posts</span></div><div class="line"><span class="attr">default_layout:</span> <span class="string">post</span></div><div class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></div><div class="line"><span class="attr">external_link:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></div><div class="line"><span class="attr">filename_case:</span> <span class="number">0</span></div><div class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></div><div class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></div><div class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></div><div class="line"><span class="attr">future:</span> <span class="literal">true</span></div><div class="line"><span class="attr">highlight:</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  auto_detect:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  tab_replace:</span></div><div class="line"></div><div class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span></div><div class="line"><span class="attr">category_map:</span></div><div class="line"><span class="attr">tag_map:</span></div><div class="line"></div><div class="line"><span class="comment">#日期格式</span></div><div class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></div><div class="line"><span class="attr">time_format:</span> <span class="attr">HH:mm:ss</span></div><div class="line"></div><div class="line"><span class="comment">#分页，每页文章数量</span></div><div class="line"><span class="attr">per_page:</span> <span class="number">10</span></div><div class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></div><div class="line"></div><div class="line"><span class="comment">#博客主题</span></div><div class="line"><span class="attr">theme:</span> <span class="string">landscape</span></div><div class="line"></div><div class="line"><span class="comment">#发布设置</span></div><div class="line"><span class="attr">deploy:</span> </div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line">  <span class="comment">#elfwalk改为你的github用户名</span></div><div class="line"><span class="attr">  repository:</span> <span class="string">git@github.com:hong1yuan/hong1yuan.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure></p>
+<p>主要就是把<em>deploy</em>改一下 省下的博客名之类的改一下<br><strong>注意</strong>：改此配置冒号后一定要加空格 否则 <code>hexo g</code>的时候会报错 而且你还很奇怪错在哪 坑之一</p>
+<p>之后安装个hexo的git插件<br><code>npm install hexo-deployer-git --save</code></p>
+<p>之后就可以创建静态文件上传到自己的github上了</p>
+<p><code>hexo d -g</code></p>
+<p><img src="/images/timg.jpg" alt="桥豆麻袋"><br>我们还需要配置一下<strong>Git</strong></p>
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><p>1.设置git邮箱与姓名<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 这里的“ted" 可以替换成自己的用户名</span></div><div class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"ted"</span></div><div class="line"><span class="comment">#这里的邮箱 ted@126.com  替换成自己的邮箱</span></div><div class="line">git<span class="built_in"> config </span>--global user.email  <span class="string">"ted@126.com"</span></div></pre></td></tr></table></figure></p>
+<p>2.如果已经设置了<strong>SSH</strong>略过 否则右键选择git Bash here 在里面可以设置SSH加密<br><img src="/images/gitbash.png" alt="gitbash"><br>输入命令</p>
+<p>#这里的邮箱 ted@126.com  替换成自己的邮箱<br><code>ssh-keygen -t rsa -C &quot;ted@126.com&quot;</code>  </p>
+<p>连续3个回车。如果不需要密码的话。<br>最后得到了两个文件：id_rsa和id_rsa.pub。</p>
+<p>默认的存储路径是：<br><strong>C:\Users\ThinkPad\ .ssh</strong></p>
+<p>3.添加密钥到ssh-agent<br>确保 ssh-agent 是可用的。ssh-agent是一种控制用来保存公钥身份验证所使用的私钥的程序，其实ssh-agent就是一个密钥管理器，运行ssh-agent以后，使用ssh-add将私钥交给ssh-agent保管，其他程序需要身份验证的时候可以将验证申请交给ssh-agent来完成整个认证过程。</p>
+<p><code>eval &quot;$(ssh-agent -s)&quot;</code> 或 ‘eval  “ssh-agent -s”‘</p>
+<p>添加生成的 SSH key 到 ssh-agent。</p>
+<p><code>ssh-add ~/.ssh/id_rsa</code>    这一步可能产生一个错误“could not open a connection to your authentication agent”</p>
+<p>这时直接输入：<code>ssh-agent bash</code>，再输入<code>ssh-add ~/.ssh/id_rsa</code>就可以</p>
+<p>这个时候 SSH就设置完成了,复制出来 直接复制文件里全部内容（没错！当时我怕复制错，复制了好遍）<br>按照之前的路径或 <code>cd ~/.ssh</code> 之后 <code>cat ~/.ssh/id_rsa.pub</code> 把里面东东复制后上github用户头像setting中把<strong>SSH key</strong>增加一个新的title随便设置 内容直接粘贴 SSH设置完毕 </p>
+<p>4.测试ssh<br>输入命令<br><code>ssh -T git@github.com</code><br>如果有需要输入yes 就输入一下<br>之后看到<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi humingx! You’ve successfully authenticated, <span class="keyword">but</span> GitHub <span class="keyword">does</span> <span class="keyword">not</span> provide shell access.</div></pre></td></tr></table></figure></p>
+<p>就成功了 终于 你可以打命令把博客传上去了<code>hexo d -g</code></p>
+<hr>
+<h1 id="设置皮肤"><a href="#设置皮肤" class="headerlink" title="设置皮肤"></a>设置皮肤</h1><h3 id="1-找一款皮肤使博客变的好看起来"><a href="#1-找一款皮肤使博客变的好看起来" class="headerlink" title="1.找一款皮肤使博客变的好看起来"></a>1.找一款皮肤使博客变的好看起来</h3><p>在hexo 可以找到github上共享的皮肤或者自己制作一份 这里提供一份共享地址<br><a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/tommy351/hexo/wiki/Themes</a></p>
+<h3 id="2-下载皮肤"><a href="#2-下载皮肤" class="headerlink" title="2.下载皮肤"></a>2.下载皮肤</h3><p>通过git下载看好的皮肤<br><code>git clone https://github.com/A-limon/pacman.git themes/pacman</code></p>
+<p>上面说过themes是存放皮肤的地方 直接git到themes中</p>
+<h3 id="3-修改-config-yml"><a href="#3-修改-config-yml" class="headerlink" title="3.修改_config.yml"></a>3.修改_config.yml</h3><p>编辑_config.yml,找到theme一行,把以前的皮肤名字修改一下 pacman<br>启动本地 看一下你的新皮肤</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>hexo还是非常强大的 可以配置各种插件 </p>
+<ul>
+<li>Disqus评论系统</li>
+<li>RSS订阅</li>
+<li>Sitemap站长地图</li>
+<li>添加404页面</li>
+<li>mathjax数学公式</li>
+<li>等等</li>
+</ul>
+<p>所以搭建博客只是第一步，之后如何维护与添加自己需要才是最重要的</p>
+<h1 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h1><p>如果有任何问题可以联系我</p>
+<p>hong1yuan@126.com</p>
+<p><img src="/images/money.png" alt="money"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -100,7 +207,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="https://hong1yuan.github.io/2017/06/06/hello/" data-title="我的博客之始 | Ted博客" data-tsina="null" class="share clearfix">
+  <div data-url="https://hong1yuan.github.io/2017/06/06/hello/" data-title="我的博客之始（附搭建hexo博客教程） | Ted博客" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -113,7 +220,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建博客"><span class="toc-number">1.</span> <span class="toc-text">搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#表达感谢"><span class="toc-number">1.0.1.</span> <span class="toc-text">表达感谢</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo搭建踩过的坑"><span class="toc-number">2.</span> <span class="toc-text">Hexo搭建踩过的坑</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#版本"><span class="toc-number">2.1.</span> <span class="toc-text">版本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本地设置"><span class="toc-number">3.</span> <span class="toc-text">本地设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#npm-与-cnpm"><span class="toc-number">3.1.</span> <span class="toc-text">npm 与 cnpm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装hexo"><span class="toc-number">3.2.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Git"><span class="toc-number">3.3.</span> <span class="toc-text">配置Git</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设置皮肤"><span class="toc-number">4.</span> <span class="toc-text">设置皮肤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-找一款皮肤使博客变的好看起来"><span class="toc-number">4.0.1.</span> <span class="toc-text">1.找一款皮肤使博客变的好看起来</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-下载皮肤"><span class="toc-number">4.0.2.</span> <span class="toc-text">2.下载皮肤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-修改-config-yml"><span class="toc-number">4.0.3.</span> <span class="toc-text">3.修改_config.yml</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">5.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#联系"><span class="toc-number">6.</span> <span class="toc-text">联系</span></a></li></ol>
   </div>
 
 <div id="asidepart">
@@ -157,7 +264,7 @@
 	</div>
 		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2017 
 		
-		<a href="https://hong1yuan.github.io" target="_blank" title="why">why</a>
+		<a href="https://hong1yuan.github.io" target="_blank" title="Ted">Ted</a>
 		
 		</p>
 </div>
